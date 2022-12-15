@@ -1,4 +1,4 @@
-dep/Sprite.d bin/Sprite.o: src/Sprite.cpp \
+dep/Rect.d bin/Rect.o: src/Rect.cpp include/Rect.h \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/cstdlib \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/mingw32/bits/c++config.h \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/mingw32/bits/os_defines.h \
@@ -111,9 +111,7 @@ dep/Sprite.d bin/Sprite.o: src/Sprite.cpp \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/istream \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/istream.tcc \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/ctime \
- C:/TDM-GCC-32/include/time.h include/SDL_include.h include/Game.h \
- include/SDL_include.h include/State.h include/Sprite.h \
- include/Component.h include/SDL2/SDL.h include/SDL2/SDL_main.h \
+ C:/TDM-GCC-32/include/time.h include/SDL2/SDL.h include/SDL2/SDL_main.h \
  include/SDL2/SDL_stdinc.h include/SDL2/SDL_config.h \
  include/SDL2/SDL_platform.h include/SDL2/begin_code.h \
  include/SDL2/close_code.h \
@@ -208,7 +206,7 @@ dep/Sprite.d bin/Sprite.o: src/Sprite.cpp \
  include/SDL2/SDL_timer.h include/SDL2/SDL_version.h \
  include/SDL2/SDL_locale.h include/SDL2/SDL_misc.h \
  include/SDL2/SDL_image.h include/SDL2/SDL.h include/SDL2/SDL_mixer.h \
- include/SDL2/SDL_ttf.h include/GameObject.h \
+ include/SDL2/SDL_ttf.h \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/vector \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/stl_uninitialized.h \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/stl_vector.h \
@@ -235,11 +233,10 @@ dep/Sprite.d bin/Sprite.o: src/Sprite.cpp \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/atomic_base.h \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/atomic_lockfree_defines.h \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/backward/auto_ptr.h \
- include/Rect.h include/Vec2.h \
- C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/math.h \
+ include/Vec2.h C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/math.h \
  C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/cmath \
- C:/TDM-GCC-32/include/math.h include/Music.h include/Game.h \
- include/State.h include/Sprite.h
+ C:/TDM-GCC-32/include/math.h include/Vec2.h
+include/Rect.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/cstdlib:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/mingw32/bits/c++config.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/mingw32/bits/os_defines.h:
@@ -363,12 +360,6 @@ C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/istream:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/istream.tcc:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/ctime:
 C:/TDM-GCC-32/include/time.h:
-include/SDL_include.h:
-include/Game.h:
-include/SDL_include.h:
-include/State.h:
-include/Sprite.h:
-include/Component.h:
 include/SDL2/SDL.h:
 include/SDL2/SDL_main.h:
 include/SDL2/SDL_stdinc.h:
@@ -491,7 +482,6 @@ include/SDL2/SDL_image.h:
 include/SDL2/SDL.h:
 include/SDL2/SDL_mixer.h:
 include/SDL2/SDL_ttf.h:
-include/GameObject.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/vector:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/stl_uninitialized.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/stl_vector.h:
@@ -518,12 +508,8 @@ C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/shared_ptr_atomic.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/atomic_base.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/bits/atomic_lockfree_defines.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/backward/auto_ptr.h:
-include/Rect.h:
 include/Vec2.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/math.h:
 C:/TDM-GCC-32/lib/gcc/mingw32/10.3.0/include/c++/cmath:
 C:/TDM-GCC-32/include/math.h:
-include/Music.h:
-include/Game.h:
-include/State.h:
-include/Sprite.h:
+include/Vec2.h:

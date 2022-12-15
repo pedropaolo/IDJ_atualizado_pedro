@@ -8,6 +8,7 @@ using namespace std;
 #include "Game.h"
 #include "State.h"
 
+
 Game* Game::instance = nullptr;
 
 Game::Game(string title, int  width  , int  height )
@@ -62,11 +63,13 @@ Game::Game(string title, int  width  , int  height )
             cout << "Unable to create renderer: " << SDL_GetError() << endl;
             exit(1);
         }
+    
+
 
     }
     else{
 
-        cout <<"Instancy already exists :("<< endl;
+        cout <<"A instancia ja existe"<< endl;
         exit(1);
     }
     
@@ -74,7 +77,10 @@ Game::Game(string title, int  width  , int  height )
 }
 
 Game::~Game(){
-    
+
+
+
+    delete state;
     
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
@@ -88,14 +94,6 @@ Game::~Game(){
 
 }
 
-Game &Game::GetInstance() {
-    if(instance == nullptr) {
-        instance = new Game("Pedro Paolo - 15/0144717",1024 ,600);
-    }
-
-    return *instance;
-}
-
 SDL_Renderer *Game::GetRenderer() {
     return renderer;
 }
@@ -104,12 +102,25 @@ SDL_Renderer *Game::GetRenderer() {
 void Game::Run(){
     
     state = new State;
+    GetInstance().state->LoadAssets();
     while(state->QuitRequested() != true){
      state->Update(45);
      state->Render();
-     SDL_RenderPresent(renderer);
+     SDL_RenderPresent(GetInstance().renderer);
      SDL_Delay(33);
      
      
     }
+}
+
+
+State& Game::GetState() {
+  return *state;
+}
+Game& Game::GetInstance() {
+  
+  if (Game::instance == nullptr) {
+    Game::instance = new Game("Pedro Paolo - 15/0144717", 1024, 600);
+  }
+  return *instance;
 }

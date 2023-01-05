@@ -28,11 +28,12 @@ RM = del
 
 RUN =
 
-SDL_PATH = C:\SDL2\SDL2-2.0.5\x86_64-w64-mingw32
+SDL_PATH = C:\SDL2-2.0.22
 
-DIRECTIVES += -I include\SDL2
 
-LIBS = -L lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lm
+DIRECTIVES += -I $(SDL_PATH)\include\SDL2
+
+LIBS = -L $(SDL_PATH)\lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lm
 
 EXEC := $(EXEC).exe
 

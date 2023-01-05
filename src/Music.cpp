@@ -3,12 +3,12 @@
 #include <ctime>
 using namespace std;
 #include "SDL_include.h"
+#define INCLUDE_SDL_MIXER
 #include "Game.h"
 #include "State.h"
 #include "Sprite.h"
 #include "Music.h"
-#define INCLUDE_SDL_MIXER
-
+#include "Resources.h"
 
 Music::Music() : music(nullptr){
 
@@ -26,6 +26,7 @@ Music::Music(string file) : music(nullptr) {
 
 void Music::Play( int times) {
 
+     
      
       if (music != nullptr)
         Mix_PlayMusic(music, times);
@@ -49,7 +50,7 @@ music = Mix_LoadMUS(file.c_str());
     SDL_Log("Unable to load music Mix_LoadMUS: %s", SDL_GetError());
     exit(EXIT_FAILURE);
   }
-
+  Music::music = Resources::GetMusic(file);
 }
 
 bool Music::IsOpen(){

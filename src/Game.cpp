@@ -7,13 +7,13 @@ using namespace std;
 #include "SDL_include.h"
 #include "Game.h"
 #include "State.h"
+#include "Resources.h"
 
 
 Game* Game::instance = nullptr;
 
 Game::Game(string title, int  width  , int  height )
 {
-
 
     if(instance==nullptr){
         
@@ -24,7 +24,6 @@ Game::Game(string title, int  width  , int  height )
             exit(1);
         }
      
-
         int flagsIMAGENS = (IMG_INIT_JPG | IMG_INIT_PNG | IMG_INIT_TIF);
         int initIMAGENS = IMG_Init(flagsIMAGENS);
         if ((initIMAGENS & flagsIMAGENS) != flagsIMAGENS) {
@@ -32,7 +31,6 @@ Game::Game(string title, int  width  , int  height )
             exit(1);
         }
 
-     
         int flagsMIX = (/*MIX_INIT_MP3 |*/ MIX_INIT_OGG);
         int initMIX = Mix_Init(flagsMIX);
         if ((initMIX & flagsMIX) != flagsMIX) {
@@ -44,14 +42,13 @@ Game::Game(string title, int  width  , int  height )
             cout << "Unable to Mix_OpenAudio: " << Mix_GetError() << endl;
             exit(1);
         }
-
-      
+  
         if (TTF_Init() != 0) {
             cout << "Unable to TTF_Init: " << TTF_GetError() << endl;
             exit(1);
         }
 
-          window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height,
+        window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height,
                                   0);
         if (window == nullptr) {
             cout << "Unable to create window: " << SDL_GetError() << endl;
@@ -63,24 +60,23 @@ Game::Game(string title, int  width  , int  height )
             cout << "Unable to create renderer: " << SDL_GetError() << endl;
             exit(1);
         }
-    
-
 
     }
     else{
+        
+    Game::state = new State();
 
-        cout <<"A instancia ja existe"<< endl;
-        exit(1);
-    }
-    
+    } 
  
 }
 
 Game::~Game(){
+    
+  delete state;
 
-
-
-    delete state;
+  Resources::ClearImages();
+  Resources::ClearMusics();
+  Resources::ClearSounds();
     
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
@@ -98,7 +94,6 @@ SDL_Renderer *Game::GetRenderer() {
     return renderer;
 }
 
-
 void Game::Run(){
     
     state = new State;
@@ -107,20 +102,20 @@ void Game::Run(){
      state->Update(45);
      state->Render();
      SDL_RenderPresent(GetInstance().renderer);
-     SDL_Delay(33);
-     
+     SDL_Delay(33);    
      
     }
 }
 
-
 State& Game::GetState() {
   return *state;
 }
+
+
 Game& Game::GetInstance() {
   
   if (Game::instance == nullptr) {
-    Game::instance = new Game("Pedro Paolo - 15/0144717", 1024, 600);
+    Game::instance = new Game("Pedro Paolo de Oliveira Picinin - 15/0144717", 1024, 600);
   }
   return *instance;
 }

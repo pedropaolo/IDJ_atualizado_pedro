@@ -212,7 +212,7 @@ dep/State.d bin/State.o: src/State.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Music.h include/Game.h \
+ include/Timer.h include/Music.h include/Game.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
@@ -231,10 +231,10 @@ dep/State.d bin/State.o: src/State.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h \
- include/Minion.h include/Sprite.h include/TileMap.h include/TileSet.h \
- include/TileSet.h include/Rect.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h
+ include/Minion.h include/TileMap.h include/TileSet.h include/TileSet.h \
+ include/Rect.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h \
+ include/PenguinBody.h include/Collider.h include/Collision.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -696,6 +696,8 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
 
+include/Timer.h:
+
 include/Music.h:
 
 include/Game.h:
@@ -748,8 +750,6 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h:
 
 include/Minion.h:
 
-include/Sprite.h:
-
 include/TileMap.h:
 
 include/TileSet.h:
@@ -761,3 +761,9 @@ include/Rect.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h:
+
+include/PenguinBody.h:
+
+include/Collider.h:
+
+include/Collision.h:

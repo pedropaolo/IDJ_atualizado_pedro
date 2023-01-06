@@ -12,6 +12,9 @@ using namespace std;
 
 Music::Music() : music(nullptr){
 
+
+
+
 }
 
 void Music::Volume(int volume){

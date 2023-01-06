@@ -1,18 +1,22 @@
 #include <cstdlib>
 #include <iostream>
 #include <ctime>
+using namespace std;
 #include "SDL_include.h"
 #include "Game.h"
 #include "State.h"
+#include "Camera.h"
+#include "CameraFollower.h"
 #include "Face.h"
+#include "InputManager.h"
 #include <math.h>
 #include "Vec2.h"
 #include "Sound.h"
 #include "Sprite.h"
 #include "TileMap.h"
 #include "TileSet.h"
+#include "Vec2.h"
 
-using namespace std;
 
 State::State()  : music(Music()){
 
@@ -20,6 +24,7 @@ State::State()  : music(Music()){
   bg->box.x = 0;
   bg->box.y = 0;
   bg->AddComponent(new Sprite(*bg, "img/ocean.jpg"));
+   bg->AddComponent(new CameraFollower(*bg));
   objectArray.emplace_back(bg);
  
 
@@ -43,16 +48,47 @@ void State::LoadAssets() {
 
 void State::Update(float dt) {
 
-   
- Input();
+  
+	int mouseX, mouseY;
 
+	SDL_GetMouseState(&mouseX, &mouseY);
+  Camera::Update(dt);  
+  State::quitRequested = InputManager::GetInstance().QuitRequested();
 
+	
+  if(InputManager::GetInstance().KeyPress(SDLK_ESCAPE)) {
+				quitRequested = true;
+			} 
 
+  if(InputManager::GetInstance().MousePress(SDL_QUIT)) {
+				quitRequested = true;
+			} 
+
+  if(InputManager::GetInstance().MousePress(LEFT_MOUSE_BUTTON)) {
+
+			for(int i = objectArray.size() - 1; i >= 0; --i) {
+				GameObject* go = (GameObject*) objectArray[i].get();
+
+				if(go->box.Contains( {(float)mouseX + Camera::pos.x, (float)mouseY + Camera::pos.y} ) ) {
+					Face* face = (Face*)go->GetComponent( "Face" );
+					if ( nullptr != face ) {
+						face->Damage(std::rand() % 10 + 10);
+						break;
+					}
+				}
+			}
+		}
+
+	  if (InputManager::GetInstance().KeyPress(SDLK_SPACE)) {
+    Vec2 objPos = Vec2( 150, 0 ).Rotate( -3.14156 + 3.14156*(rand() % 1001)/500.0 ) + Vec2( mouseX + Camera::pos.x , mouseY + Camera::pos.y);
+    State::AddObject((int)objPos.x, (int)objPos.y);
+  }
+	
+		
   for (int i = (int)objectArray.size() - 1; i >= 0; i--) {
     State::objectArray.at(i)->Update(dt);
   }
-
-
+  /* Sweep of dead objects around the game. */
   for (int i = (int)objectArray.size() - 1; i >= 0; i--) {
     if (objectArray.at(i)->IsDead()) {
         printf("State::Update ta tocando musica\n");
@@ -63,9 +99,10 @@ void State::Update(float dt) {
 }
 
 void State::Render() {
-
    for (unsigned int i = 0; i < objectArray.size(); i++) {
+   
    objectArray.at(i).get()->Render();
+  
   }
 
 }
@@ -81,52 +118,12 @@ State::~State() {
 }
 
 
-void State::Input() {
-	SDL_Event event;
-	int mouseX, mouseY;
 
-	SDL_GetMouseState(&mouseX, &mouseY);
-
-	while (SDL_PollEvent(&event)) {
-
-		if(event.type == SDL_QUIT) {
-			quitRequested = true;
-		}
-		
-
-		if(event.type == SDL_MOUSEBUTTONDOWN) {
-
-			for(int i = objectArray.size() - 1; i >= 0; --i) {
-
-				GameObject* go = (GameObject*) objectArray[i].get();
-				if(go->box.Contains( {(float)mouseX, (float)mouseY} ) ) {
-					Face* face = (Face*)go->GetComponent( "Face" );
-					if ( nullptr != face ) {
-
-						face->Damage(std::rand() % 10 + 10);
-
-						break;
-					}
-				}
-			}
-		}
-		if( event.type == SDL_KEYDOWN ) {
-    			if( event.key.keysym.sym == SDLK_ESCAPE ) {
-				quitRequested = true;
-			}
-
-			else {
-				Vec2 objPos = Vec2( 200, 0 ).Rotate( -3.14156 + 3.14156*(rand() % 1001)/500.0 ) + Vec2( mouseX, mouseY );
-				AddObject((int)objPos.x, (int)objPos.y);
-			}
-		}
-	}
-}
 
 void State::AddObject (int mouseX , int mouseY)  {
 
-	 GameObject* penguim = new GameObject();
-
+	GameObject* penguim = new GameObject();
+  
   
   penguim->box.x = mouseX;
   penguim->box.y = mouseY;

@@ -7,10 +7,8 @@ std::unordered_map<std::string, Mix_Chunk*> Resources::soundTable;
 
 SDL_Texture* Resources::GetImage(std::string file) {
 
-
   std::unordered_map<std::string, SDL_Texture*>::const_iterator foundIt =
                                             Resources::imageTable.find(file);
-
 
   if (foundIt != Resources::imageTable.end()) {
     return foundIt->second;
@@ -23,7 +21,6 @@ SDL_Texture* Resources::GetImage(std::string file) {
 
 void Resources::ClearImages() {
 
-
   for (auto& image: Resources::imageTable) {
     SDL_DestroyTexture(image.second);
   }
@@ -34,7 +31,6 @@ Mix_Music* Resources::GetMusic(std::string file) {
 
   std::unordered_map<std::string, Mix_Music*>::const_iterator foundIt =
                                             Resources::musicTable.find(file);
-
 
   if (foundIt != Resources::musicTable.end()) {
     return foundIt->second;

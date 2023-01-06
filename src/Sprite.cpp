@@ -7,16 +7,22 @@ using namespace std;
 #include "State.h"
 #include "Sprite.h"
 #include "Resources.h"
+#include "Camera.h"
 
 
 Sprite::Sprite(GameObject& associated) : Component(associated),texture(nullptr){
+
+
      width = 0;
      height = 0;
+ 
+
 }
 
 Sprite::Sprite(GameObject& associated,string file) : Component(associated),texture(nullptr){
 
    Open(file);
+  
   associated.box.w = Sprite::width;
   associated.box.h = Sprite::height;
   printf("Sprite::Sprite(2) width = (box) %d - (Sprite) %d\n", (int)associated.box.w, width);
@@ -28,6 +34,7 @@ Sprite::Sprite(GameObject& associated,string file) : Component(associated),textu
 Sprite::~Sprite() {
 
    if(texture!=nullptr){
+
         SDL_DestroyTexture(texture);
    }
 
@@ -39,7 +46,7 @@ if (Sprite::texture != nullptr) {
     SDL_DestroyTexture(Sprite::texture);
   }
   Sprite::texture = Resources::GetImage(file);
-
+  /* Loads texture. */
   Sprite::texture = IMG_LoadTexture(Game::GetInstance().GetRenderer(),
                                     file.c_str());
   if (Sprite::texture == nullptr) {
@@ -54,7 +61,7 @@ if (SDL_QueryTexture(Sprite::texture,
     SDL_Log("Unable to initialize Query Texture: %s", SDL_GetError());
     exit(EXIT_FAILURE);
   }
-
+  /* Clips texture. */
 SetClip(0, 0, Sprite::width, Sprite::height);
   SetClip(0, 0, Sprite::width, Sprite::height);
     
@@ -70,6 +77,8 @@ void Sprite::SetClip( int x , int y , int w ,  int h) {
 }
 
 void Sprite::Render(int x ,  int y) {
+  
+   
  
   SDL_Rect dstrect;
   
@@ -110,18 +119,6 @@ bool Sprite::Is(std::string type) {
 
 void Sprite::Render() {
 
-  SDL_Rect dstRect;
-  dstRect.x = Sprite::associated.box.x;
-  dstRect.y = Sprite::associated.box.y;
-  dstRect.w = Sprite::clipRect.w;
-  dstRect.h = Sprite::clipRect.h;
-
+  Render(associated.box.x - Camera::pos.x,associated.box.y - Camera::pos.y);
   
-  if (SDL_RenderCopy(Game::GetInstance().GetRenderer(),
-                     Sprite::texture,
-                     &clipRect,
-                     &dstRect) != 0) {
-    SDL_Log("Unable to initialize Render Copy: %s", SDL_GetError());
-    exit(EXIT_FAILURE);
-  }
 }

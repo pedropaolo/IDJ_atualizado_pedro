@@ -5,6 +5,7 @@ using namespace std;
 #define INCLUDE_SDL_IMAGE
 #define INCLUDE_SDL_MIXER
 #include "Face.h"
+
 #include "Sound.h"
 #include "Sprite.h"
 
@@ -30,6 +31,7 @@ void Face::Damage(int damage){
     }
     printf("Damage\n");
    
+      
   
    }
 }
@@ -46,9 +48,11 @@ void Face::Update(float dt){
     }
   }
 
+
 }}
 
 void Face::Render(){
+
 
 }
 
@@ -58,8 +62,6 @@ bool Face::Is(string type) {
   }
   return false;
 }
-
-
 bool Face::IsDead() {
   return hitpoints <= 0;
 }

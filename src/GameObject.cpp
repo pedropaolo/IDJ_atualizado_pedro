@@ -17,7 +17,9 @@ GameObject::GameObject() : box(Rect())  {
     
 }
 
-GameObject::~GameObject()  {    
+GameObject::~GameObject()  {
+
+    
     components.clear();
 }
 
@@ -57,19 +59,21 @@ void GameObject::AddComponent(Component *cpt){
 
 void GameObject::RemoveComponent(Component *cpt){
 
-  unsigned int posicao = 0;
-  bool isNot = true;
+   unsigned int posicao = 0;
+  bool naoEsta = true;
   while (posicao != components.size()) {
     
     if (components.at(posicao).get() == cpt) {
       components.erase(components.begin() + posicao);
-      isNot = false;
+      naoEsta = false;
       break;
     }
   }
 
-  if (isNot) {
+  if (naoEsta) {
+    
   }
+
     
 }
 

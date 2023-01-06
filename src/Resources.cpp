@@ -47,7 +47,6 @@ Mix_Music* Resources::GetMusic(std::string file) {
 
 void Resources::ClearMusics() {
 
-
   for (auto& music: Resources::musicTable) {
     Mix_FreeMusic(music.second);
   }

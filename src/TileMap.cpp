@@ -21,6 +21,7 @@ void TileMap::Load(std::string file) {
 
   int indexValue = 0;
   int nextNum = 0;
+
   getline(fileContent, lineString);
   for (unsigned int i = 0; i < lineString.size(); i++) {
     if (lineString.at(i) == ',') {
@@ -50,6 +51,7 @@ void TileMap::Load(std::string file) {
         tileValue *= 10;
         tileValue += lineString.at(i) - '0';
       } else if (lineString.at(i) == ',') {
+        
         TileMap::tileMatrix.push_back(tileValue - 1);
         tileValue = 0;
       } else {
@@ -88,6 +90,7 @@ void TileMap::SetTileSet(TileSet* tileSet) {
 
 int& TileMap::At(int x, int y, int z) {
 
+ 
   return TileMap::tileMatrix.at(x +
                                 (y * TileMap::mapWidth) +
                                 (z * TileMap::mapWidth * TileMap::mapHeight));
@@ -102,6 +105,7 @@ void TileMap::Render() {
  }
 
 void TileMap::RenderLayer(int layer, int cameraX, int cameraY) {
+
 
    for (int i = 0; i < mapWidth; i++){
         for (int j = 0; j < mapHeight; j++){

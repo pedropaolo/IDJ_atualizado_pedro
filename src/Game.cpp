@@ -59,11 +59,16 @@ Game::Game(string title, int  width  , int  height ) :  dt(0), frameStart(0){
             exit(1);
         }
 
+        //Cria o renderizador
         renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
         if (renderer == nullptr) {
             cout << "Unable to create renderer: " << SDL_GetError() << endl;
             exit(1);
         }
+
+        //Initialize storedState
+        
+
 
 
     }
@@ -105,10 +110,14 @@ SDL_Renderer *Game::GetRenderer() {
 }
 
 
+
+
+
 void Game::Run(){
     
     state = new State;
     GetInstance().state->LoadAssets();
+    state->Start();
     while(state->QuitRequested() != true){
      CalculateDeltaTime();   
      InputManager::GetInstance().Update();
@@ -128,7 +137,7 @@ State& Game::GetState() {
 Game& Game::GetInstance() {
   
   if (Game::instance == nullptr) {
-    Game::instance = new Game("Pedro Paolo de Oliveira Picinin  15/0144717", 1024, 600);
+    Game::instance = new Game("Pedro Paolo de Oliveira Picinin - 15/0144717", 1024, 600);
   }
   return *instance;
 }

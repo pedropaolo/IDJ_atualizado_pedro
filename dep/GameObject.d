@@ -210,9 +210,7 @@ dep/GameObject.d bin/GameObject.o: src/GameObject.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Component.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iterator \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stream_iterator.h
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -667,9 +665,3 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
-
-include/Component.h:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iterator:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stream_iterator.h:

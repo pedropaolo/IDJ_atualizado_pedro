@@ -181,8 +181,8 @@ dep/TileSet.d bin/TileSet.o: src/TileSet.cpp \
  C:\TDM-GCC-64/include/SDL2/SDL_misc.h \
  C:\TDM-GCC-64/include/SDL2/SDL_image.h C:\TDM-GCC-64/include/SDL2/SDL.h \
  C:\TDM-GCC-64/include/SDL2/SDL_mixer.h \
- C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/TileSet.h \
- include/GameObject.h include/Component.h \
+ C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/TileSet.h include/Sprite.h \
+ include/SDL_include.h include/Component.h include/GameObject.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
@@ -211,7 +211,7 @@ dep/TileSet.d bin/TileSet.o: src/TileSet.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Sprite.h include/SDL_include.h include/Timer.h
+ include/Timer.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -601,9 +601,13 @@ C:\TDM-GCC-64/include/SDL2/SDL_ttf.h:
 
 include/TileSet.h:
 
-include/GameObject.h:
+include/Sprite.h:
+
+include/SDL_include.h:
 
 include/Component.h:
+
+include/GameObject.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:
 
@@ -664,9 +668,5 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
-
-include/Sprite.h:
-
-include/SDL_include.h:
 
 include/Timer.h:

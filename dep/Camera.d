@@ -181,12 +181,15 @@ dep/Camera.d bin/Camera.o: src/Camera.cpp \
  C:\TDM-GCC-64/include/SDL2/SDL_locale.h \
  C:\TDM-GCC-64/include/SDL2/SDL_misc.h \
  C:\TDM-GCC-64/include/SDL2/SDL_mixer.h include/Game.h \
- include/SDL_include.h include/State.h include/Sprite.h \
- include/Component.h C:\TDM-GCC-64/include/SDL2/SDL.h \
- C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/GameObject.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
+ include/SDL_include.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
+ include/State.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
@@ -195,7 +198,6 @@ dep/Camera.d bin/Camera.o: src/Camera.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_raw_storage_iter.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\typeinfo \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\concurrence.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\utility \
@@ -209,10 +211,10 @@ dep/Camera.d bin/Camera.o: src/Camera.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_atomic.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h \
- include/Rect.h include/Vec2.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
+ include/GameObject.h C:\TDM-GCC-64/include/SDL2/SDL.h \
+ C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/Component.h include/Rect.h \
+ include/Vec2.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Timer.h include/Music.h include/Game.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
@@ -223,7 +225,7 @@ dep/Camera.d bin/Camera.o: src/Camera.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
- include/Camera.h include/Vec2.h
+ include/Camera.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -613,23 +615,25 @@ include/Game.h:
 
 include/SDL_include.h:
 
-include/State.h:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack:
 
-include/Sprite.h:
-
-include/Component.h:
-
-C:\TDM-GCC-64/include/SDL2/SDL.h:
-
-C:\TDM-GCC-64/include/SDL2/SDL_ttf.h:
-
-include/GameObject.h:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h:
+
+include/State.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:
 
@@ -646,8 +650,6 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_raw_storage_iter.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\typeinfo:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\concurrence.h:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:
 
@@ -675,6 +677,14 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h:
 
+include/GameObject.h:
+
+C:\TDM-GCC-64/include/SDL2/SDL.h:
+
+C:\TDM-GCC-64/include/SDL2/SDL_ttf.h:
+
+include/Component.h:
+
 include/Rect.h:
 
 include/Vec2.h:
@@ -684,12 +694,6 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
-
-include/Timer.h:
-
-include/Music.h:
-
-include/Game.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:
 
@@ -714,5 +718,3 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h:
 
 include/Camera.h:
-
-include/Vec2.h:

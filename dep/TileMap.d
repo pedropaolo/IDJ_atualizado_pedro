@@ -188,7 +188,8 @@ dep/TileMap.d bin/TileMap.o: src/TileMap.cpp include/TileMap.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- include/TileSet.h include/GameObject.h include/Component.h \
+ include/TileSet.h include/Sprite.h include/SDL_include.h \
+ include/Component.h include/GameObject.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tempbuf.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_raw_storage_iter.h \
@@ -211,7 +212,7 @@ dep/TileMap.d bin/TileMap.o: src/TileMap.cpp include/TileMap.h \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Sprite.h include/SDL_include.h include/Camera.h \
+ include/Timer.h include/Camera.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\fstream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\codecvt.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\basic_file.h \
@@ -620,9 +621,13 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc:
 
 include/TileSet.h:
 
-include/GameObject.h:
+include/Sprite.h:
+
+include/SDL_include.h:
 
 include/Component.h:
+
+include/GameObject.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:
 
@@ -672,9 +677,7 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
 
-include/Sprite.h:
-
-include/SDL_include.h:
+include/Timer.h:
 
 include/Camera.h:
 

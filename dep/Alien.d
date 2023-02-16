@@ -217,14 +217,16 @@ dep/Alien.d bin/Alien.o: src/Alien.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h \
- include/Sprite.h include/SDL_include.h include/InputManager.h \
+ include/Sprite.h include/SDL_include.h include/Camera.h \
+ include/InputManager.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
- include/Camera.h include/Minion.h include/Game.h include/State.h \
- include/Sprite.h include/Music.h include/Game.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
+ include/Minion.h include/Game.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h \
+ include/State.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
@@ -703,6 +705,8 @@ include/Sprite.h:
 
 include/SDL_include.h:
 
+include/Camera.h:
+
 include/InputManager.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map:
@@ -713,19 +717,15 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h:
 
-include/Camera.h:
-
 include/Minion.h:
 
 include/Game.h:
 
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h:
+
 include/State.h:
-
-include/Sprite.h:
-
-include/Music.h:
-
-include/Game.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:
 

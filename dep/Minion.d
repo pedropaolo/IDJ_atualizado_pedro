@@ -97,7 +97,8 @@ dep/Minion.d bin/Minion.o: src/Minion.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime c:\mingw\include\time.h \
- include/SDL_include.h include/Minion.h C:\TDM-GCC-64/include/SDL2/SDL.h \
+ include/SDL_include.h include/Sprite.h include/SDL_include.h \
+ C:\TDM-GCC-64/include/SDL2/SDL_image.h C:\TDM-GCC-64/include/SDL2/SDL.h \
  C:\TDM-GCC-64/include/SDL2/SDL_main.h \
  C:\TDM-GCC-64/include/SDL2/SDL_stdinc.h \
  C:\TDM-GCC-64/include/SDL2/SDL_config.h \
@@ -180,9 +181,8 @@ dep/Minion.d bin/Minion.o: src/Minion.cpp \
  C:\TDM-GCC-64/include/SDL2/SDL_version.h \
  C:\TDM-GCC-64/include/SDL2/SDL_locale.h \
  C:\TDM-GCC-64/include/SDL2/SDL_misc.h \
- C:\TDM-GCC-64/include/SDL2/SDL_image.h C:\TDM-GCC-64/include/SDL2/SDL.h \
- C:\TDM-GCC-64/include/SDL2/SDL_mixer.h \
- C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/Component.h \
+ C:\TDM-GCC-64/include/SDL2/SDL_mixer.h include/Component.h \
+ C:\TDM-GCC-64/include/SDL2/SDL.h C:\TDM-GCC-64/include/SDL2/SDL_ttf.h \
  include/GameObject.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
@@ -211,20 +211,21 @@ dep/Minion.d bin/Minion.o: src/Minion.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue \
+ include/Timer.h include/Game.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h \
- include/Component.h include/GameObject.h include/Bullet.h include/Game.h \
- include/SDL_include.h include/State.h include/Sprite.h include/Timer.h \
- include/Music.h include/Game.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h \
+ include/State.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits include/Collider.h
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits include/Collider.h \
+ include/Bullet.h include/Sound.h include/Minion.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -436,7 +437,11 @@ c:\mingw\include\time.h:
 
 include/SDL_include.h:
 
-include/Minion.h:
+include/Sprite.h:
+
+include/SDL_include.h:
+
+C:\TDM-GCC-64/include/SDL2/SDL_image.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL.h:
 
@@ -608,15 +613,13 @@ C:\TDM-GCC-64/include/SDL2/SDL_locale.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL_misc.h:
 
-C:\TDM-GCC-64/include/SDL2/SDL_image.h:
+C:\TDM-GCC-64/include/SDL2/SDL_mixer.h:
+
+include/Component.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL.h:
 
-C:\TDM-GCC-64/include/SDL2/SDL_mixer.h:
-
 C:\TDM-GCC-64/include/SDL2/SDL_ttf.h:
-
-include/Component.h:
 
 include/GameObject.h:
 
@@ -680,7 +683,11 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
 
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue:
+include/Timer.h:
+
+include/Game.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque:
 
@@ -688,29 +695,9 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc:
 
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h:
-
-include/Component.h:
-
-include/GameObject.h:
-
-include/Bullet.h:
-
-include/Game.h:
-
-include/SDL_include.h:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h:
 
 include/State.h:
-
-include/Sprite.h:
-
-include/Timer.h:
-
-include/Music.h:
-
-include/Game.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:
 
@@ -718,8 +705,20 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h:
 
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h:
+
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits:
 
 include/Collider.h:
+
+include/Bullet.h:
+
+include/Sound.h:
+
+include/Minion.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h:

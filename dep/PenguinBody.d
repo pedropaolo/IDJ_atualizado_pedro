@@ -97,7 +97,7 @@ dep/PenguinBody.d bin/PenguinBody.o: src/PenguinBody.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime c:\mingw\include\time.h \
- include/SDL_include.h include/PenguinBody.h include/SDL_include.h \
+ include/SDL_include.h include/Sprite.h include/SDL_include.h \
  C:\TDM-GCC-64/include/SDL2/SDL_image.h C:\TDM-GCC-64/include/SDL2/SDL.h \
  C:\TDM-GCC-64/include/SDL2/SDL_main.h \
  C:\TDM-GCC-64/include/SDL2/SDL_stdinc.h \
@@ -211,10 +211,13 @@ dep/PenguinBody.d bin/PenguinBody.o: src/PenguinBody.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Sprite.h include/Timer.h include/PenguinCannon.h \
- include/PenguinBody.h include/Game.h include/State.h include/Sprite.h \
- include/Music.h include/Game.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
+ include/Timer.h include/PenguinCannon.h include/Game.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h \
+ include/State.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
@@ -224,7 +227,8 @@ dep/PenguinBody.d bin/PenguinBody.o: src/PenguinBody.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
- include/Collider.h include/Camera.h include/Bullet.h include/Sound.h
+ include/Collider.h include/Bullet.h include/Camera.h include/Sound.h \
+ include/PenguinBody.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -436,7 +440,7 @@ c:\mingw\include\time.h:
 
 include/SDL_include.h:
 
-include/PenguinBody.h:
+include/Sprite.h:
 
 include/SDL_include.h:
 
@@ -682,23 +686,23 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
 
-include/Sprite.h:
-
 include/Timer.h:
 
 include/PenguinCannon.h:
 
-include/PenguinBody.h:
-
 include/Game.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h:
 
 include/State.h:
-
-include/Sprite.h:
-
-include/Music.h:
-
-include/Game.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:
 
@@ -724,8 +728,10 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h:
 
 include/Collider.h:
 
-include/Camera.h:
-
 include/Bullet.h:
 
+include/Camera.h:
+
 include/Sound.h:
+
+include/PenguinBody.h:

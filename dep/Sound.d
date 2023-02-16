@@ -211,7 +211,12 @@ dep/Sound.d bin/Sound.o: src/Sound.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/GameObject.h include/Component.h
+ include/Resources.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
+ include/SDL_include.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -665,6 +670,14 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
 
-include/GameObject.h:
+include/Resources.h:
 
-include/Component.h:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h:
+
+include/SDL_include.h:

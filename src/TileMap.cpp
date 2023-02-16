@@ -111,8 +111,8 @@ void TileMap::RenderLayer(int layer, int cameraX, int cameraY) {
 
    for (int i = 0; i < mapWidth; i++){
         for (int j = 0; j < mapHeight; j++){
-            auto x = (int)(i * tileSet->GetTileWidth() - cameraX -  0.9* Camera::pos.x * layer);
-            auto y = (int)(j * tileSet->GetTileHeight() - cameraY - 0.9* Camera::pos.y * layer);
+            auto x = (int)(i * tileSet->GetTileWidth() - cameraX -  0.5* Camera::pos.x * layer);
+            auto y = (int)(j * tileSet->GetTileHeight() - cameraY - 0.5* Camera::pos.y * layer);
 
             tileSet->RenderTile((unsigned)At(i, j, layer), x, y);
         }

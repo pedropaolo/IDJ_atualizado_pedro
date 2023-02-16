@@ -7,15 +7,12 @@ using namespace std;
 #define INCLUDE_SDL_MIXER
 #include "Alien.h"
 #include "Sprite.h"
-#include "InputManager.h"
 #include "Camera.h"
+#include "InputManager.h"
 #include "Minion.h"
 #include "Game.h"
 #include "Bullet.h"
-#include <queue>
-#include <memory>
-#include <vector>
-#include <PenguinBody.h>
+#include "PenguinBody.h"
 #include "Collider.h"
 #include "Sound.h"
 
@@ -54,10 +51,10 @@ void Alien::Start(){
          auto setor = (float)( (M_PI*i*(360.0/(float)minionSize))/180.0f);
 
         minionGO->AddComponent(new Minion(*minionGO,
-                                          Game::GetInstance().GetState().GetObjectPtr(&associated),
+                                          Game::GetInstance().GetCurrentState().GetObjectPtr(&associated),
                                           setor));
 
-         minionArray[i] = (Game::GetInstance().GetState().AddObject(minionGO));
+         minionArray[i] = (Game::GetInstance().GetCurrentState().AddObject(minionGO));
         restTimer = *new Timer;
 }
 
@@ -67,7 +64,11 @@ void Alien::Start(){
 void Alien::Update(float dt){
 
  Rect box = Alien::associated.box;
-
+  //cout<<hp<<endl;
+  /*if (InputManager::GetInstance().MousePress(LEFT_MOUSE_BUTTON)) {
+    Alien::taskQueue.push(Action(Action::SHOOT, mousePos.x, mousePos.y));
+  }*/
+  
    Vec2 mousePos = Vec2(InputManager::GetInstance().GetMouseX(),
                        InputManager::GetInstance().GetMouseY());
 
@@ -82,7 +83,7 @@ void Alien::Update(float dt){
     deathalien->AddComponent(explosionSound);
     explosionSound->Play();
 
-    Game::GetInstance().GetState().AddObject(deathalien);
+    Game::GetInstance().GetCurrentState().AddObject(deathalien);
     associated.RequestDelete();
   }
   else{
@@ -119,7 +120,10 @@ void Alien::Update(float dt){
                     associated.box += calculado;
 
                     auto pos = player->GetPlayerCenter();
+                    //if(!minionArray[0].expired())
                     float minionDS = minionArray[0].lock()->box.GetCenter().Dist(pos);
+                    //else
+
                     int nearestMinion = 0;
 
                     for (int i = 1; i < minionArray.size(); i++) {

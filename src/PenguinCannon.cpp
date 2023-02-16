@@ -5,14 +5,15 @@
 using namespace std;
 #define INCLUDE_SDL_IMAGE
 #define INCLUDE_SDL_MIXER
+#include <Sprite.h>
+#include <InputManager.h>
+#include <Game.h>
+#include <Bullet.h>
+#include <Collider.h>
+#include <Timer.h>
+#include <Sound.h>
+#include <Camera.h>
 #include "PenguinCannon.h"
-#include "GameObject.h"
-#include "InputManager.h"
-#include "Bullet.h"
-#include "Game.h"
-#include "Vec2.h"
-#include "Collider.h"
-#include "Timer.h"
 
 
 PenguinCannon::PenguinCannon(GameObject& associated,std::weak_ptr< GameObject > penguinBody): Component(associated){
@@ -34,7 +35,7 @@ if(body.IsDead()){
    
 
     associated.box = body.box;
-    associated.angleDeg = (Vec2(InputManager::GetInstance().GetMouseX(),InputManager::GetInstance().GetMouseY()) - associated.box.GetCenter()).InclXDeg();
+    associated.angleDeg = (Vec2(InputManager::GetInstance().GetMouseX()+Camera::pos.x,InputManager::GetInstance().GetMouseY()+Camera::pos.y) - associated.box.GetCenter()).InclXDeg();
     angle = (float)associated.angleDeg;
 
     if(InputManager::GetInstance().MousePress(LEFT_MOUSE_BUTTON)){
@@ -78,7 +79,7 @@ auto bulletGo = new GameObject;
     bullet->targetsPlayer = false;
     bulletGo->AddComponent(bullet);
     
-    Game::GetInstance().GetState().AddObject(bulletGo);
+    Game::GetInstance().GetCurrentState().AddObject(bulletGo);
 
 
 }

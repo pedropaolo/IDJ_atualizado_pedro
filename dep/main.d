@@ -8,8 +8,8 @@ dep/main.d bin/main.o: src/main.cpp c:\mingw\include\stdio.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\cpu_defines.h \
- c:\mingw\include\stdlib.h include/Game.h include/SDL_include.h \
- include/State.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
+ c:\mingw\include\stdlib.h include/TitleState.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
@@ -97,8 +97,7 @@ dep/main.d bin/main.o: src/main.cpp c:\mingw\include\stdio.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime c:\mingw\include\time.h \
- include/Sprite.h include/Component.h C:\TDM-GCC-64/include/SDL2/SDL.h \
- C:\TDM-GCC-64/include/SDL2/SDL_main.h \
+ C:\TDM-GCC-64/include/SDL2/SDL.h C:\TDM-GCC-64/include/SDL2/SDL_main.h \
  C:\TDM-GCC-64/include/SDL2/SDL_stdinc.h \
  C:\TDM-GCC-64/include/SDL2/SDL_config.h \
  C:\TDM-GCC-64/include/SDL2/SDL_platform.h \
@@ -181,8 +180,8 @@ dep/main.d bin/main.o: src/main.cpp c:\mingw\include\stdio.h \
  C:\TDM-GCC-64/include/SDL2/SDL_misc.h \
  C:\TDM-GCC-64/include/SDL2/SDL_image.h C:\TDM-GCC-64/include/SDL2/SDL.h \
  C:\TDM-GCC-64/include/SDL2/SDL_mixer.h \
- C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/GameObject.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
+ C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/State.h \
+ include/SDL_include.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
@@ -207,16 +206,20 @@ dep/main.d bin/main.o: src/main.cpp c:\mingw\include\stdio.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_atomic.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h \
- include/Rect.h include/Vec2.h \
+ include/GameObject.h include/Component.h include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Music.h include/Game.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits include/Game.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h
 
 c:\mingw\include\stdio.h:
 
@@ -244,11 +247,7 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\cpu_defines.h:
 
 c:\mingw\include\stdlib.h:
 
-include/Game.h:
-
-include/SDL_include.h:
-
-include/State.h:
+include/TitleState.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:
 
@@ -434,10 +433,6 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime:
 
 c:\mingw\include\time.h:
 
-include/Sprite.h:
-
-include/Component.h:
-
 C:\TDM-GCC-64/include/SDL2/SDL.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL_main.h:
@@ -614,7 +609,9 @@ C:\TDM-GCC-64/include/SDL2/SDL_mixer.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL_ttf.h:
 
-include/GameObject.h:
+include/State.h:
+
+include/SDL_include.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:
 
@@ -666,6 +663,10 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h:
 
+include/GameObject.h:
+
+include/Component.h:
+
 include/Rect.h:
 
 include/Vec2.h:
@@ -675,10 +676,6 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
-
-include/Music.h:
-
-include/Game.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:
 
@@ -691,3 +688,15 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits:
+
+include/Game.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h:

@@ -211,7 +211,7 @@ dep/Alien.d bin/Alien.o: src/Alien.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue \
+ include/Timer.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
@@ -228,7 +228,8 @@ dep/Alien.d bin/Alien.o: src/Alien.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits include/Bullet.h \
+ include/PenguinBody.h include/Collider.h include/Sound.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -684,6 +685,8 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
 
+include/Timer.h:
+
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque:
@@ -733,3 +736,11 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits:
+
+include/Bullet.h:
+
+include/PenguinBody.h:
+
+include/Collider.h:
+
+include/Sound.h:

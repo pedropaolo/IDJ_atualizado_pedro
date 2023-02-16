@@ -211,13 +211,14 @@ dep/Bullet.d bin/Bullet.o: src/Bullet.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Sprite.h include/SDL_include.h include/Vec2.h \
+ include/Sprite.h include/SDL_include.h include/Timer.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h \
+ include/Collider.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -677,6 +678,8 @@ include/Sprite.h:
 
 include/SDL_include.h:
 
+include/Timer.h:
+
 include/Vec2.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue:
@@ -690,3 +693,5 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h:
+
+include/Collider.h:

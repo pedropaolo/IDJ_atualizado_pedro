@@ -137,7 +137,7 @@ State& Game::GetState() {
 Game& Game::GetInstance() {
   
   if (Game::instance == nullptr) {
-    Game::instance = new Game("Pedro Paolo de Oliveira Picinin - 15/0144717", 1024, 600);
+    Game::instance = new Game("Pedro Paolo de Oliveira Picinin- 15/0144717", 1024, 600);
   }
   return *instance;
 }

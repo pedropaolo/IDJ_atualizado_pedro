@@ -217,14 +217,14 @@ dep/Minion.d bin/Minion.o: src/Minion.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h \
- include/Sprite.h include/SDL_include.h include/Component.h \
- include/GameObject.h include/Bullet.h include/Game.h include/State.h \
- include/Sprite.h include/Music.h include/Game.h \
+ include/Component.h include/GameObject.h include/Bullet.h include/Game.h \
+ include/SDL_include.h include/State.h include/Sprite.h include/Timer.h \
+ include/Music.h include/Game.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits include/Collider.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -692,10 +692,6 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h:
 
-include/Sprite.h:
-
-include/SDL_include.h:
-
 include/Component.h:
 
 include/GameObject.h:
@@ -704,9 +700,13 @@ include/Bullet.h:
 
 include/Game.h:
 
+include/SDL_include.h:
+
 include/State.h:
 
 include/Sprite.h:
+
+include/Timer.h:
 
 include/Music.h:
 
@@ -721,3 +721,5 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits:
+
+include/Collider.h:

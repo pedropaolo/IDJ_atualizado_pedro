@@ -211,7 +211,7 @@ dep/TileSet.d bin/TileSet.o: src/TileSet.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Sprite.h include/SDL_include.h include/Sprite.h
+ include/Sprite.h include/SDL_include.h include/Timer.h
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -669,4 +669,4 @@ include/Sprite.h:
 
 include/SDL_include.h:
 
-include/Sprite.h:
+include/Timer.h:

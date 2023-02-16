@@ -183,8 +183,8 @@ dep/Vec2.d bin/Vec2.o: src/Vec2.cpp include/Vec2.h \
  C:\TDM-GCC-64/include/SDL2/SDL_misc.h \
  C:\TDM-GCC-64/include/SDL2/SDL_image.h C:\TDM-GCC-64/include/SDL2/SDL.h \
  C:\TDM-GCC-64/include/SDL2/SDL_mixer.h \
- C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/Component.h \
- include/GameObject.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
+ C:\TDM-GCC-64/include/SDL2/SDL_ttf.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
@@ -208,9 +208,7 @@ dep/Vec2.d bin/Vec2.o: src/Vec2.cpp include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\aligned_buffer.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_atomic.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h \
- include/Rect.h include/State.h include/SDL_include.h include/Sprite.h \
- include/Music.h include/Game.h include/Vec2.h
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h
 
 include/Vec2.h:
 
@@ -606,10 +604,6 @@ C:\TDM-GCC-64/include/SDL2/SDL_mixer.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL_ttf.h:
 
-include/Component.h:
-
-include/GameObject.h:
-
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h:
@@ -659,17 +653,3 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_atomic.h:
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h:
-
-include/Rect.h:
-
-include/State.h:
-
-include/SDL_include.h:
-
-include/Sprite.h:
-
-include/Music.h:
-
-include/Game.h:
-
-include/Vec2.h:

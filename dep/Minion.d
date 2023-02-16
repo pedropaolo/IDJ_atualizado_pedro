@@ -1,4 +1,4 @@
-dep/Camera.d bin/Camera.o: src/Camera.cpp \
+dep/Minion.d bin/Minion.o: src/Minion.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
@@ -97,8 +97,8 @@ dep/Camera.d bin/Camera.o: src/Camera.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ctime c:\mingw\include\time.h \
- include/SDL_include.h C:\TDM-GCC-64/include/SDL2/SDL_image.h \
- C:\TDM-GCC-64/include/SDL2/SDL.h C:\TDM-GCC-64/include/SDL2/SDL_main.h \
+ include/SDL_include.h include/Minion.h C:\TDM-GCC-64/include/SDL2/SDL.h \
+ C:\TDM-GCC-64/include/SDL2/SDL_main.h \
  C:\TDM-GCC-64/include/SDL2/SDL_stdinc.h \
  C:\TDM-GCC-64/include/SDL2/SDL_config.h \
  C:\TDM-GCC-64/include/SDL2/SDL_platform.h \
@@ -180,11 +180,10 @@ dep/Camera.d bin/Camera.o: src/Camera.cpp \
  C:\TDM-GCC-64/include/SDL2/SDL_version.h \
  C:\TDM-GCC-64/include/SDL2/SDL_locale.h \
  C:\TDM-GCC-64/include/SDL2/SDL_misc.h \
- C:\TDM-GCC-64/include/SDL2/SDL_mixer.h include/Game.h \
- include/SDL_include.h include/State.h include/Sprite.h \
- include/Component.h C:\TDM-GCC-64/include/SDL2/SDL.h \
- C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/GameObject.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
+ C:\TDM-GCC-64/include/SDL2/SDL_image.h C:\TDM-GCC-64/include/SDL2/SDL.h \
+ C:\TDM-GCC-64/include/SDL2/SDL_mixer.h \
+ C:\TDM-GCC-64/include/SDL2/SDL_ttf.h include/Component.h \
+ include/GameObject.h c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
@@ -212,18 +211,20 @@ dep/Camera.d bin/Camera.o: src/Camera.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Music.h include/Game.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h \
+ include/Sprite.h include/SDL_include.h include/Component.h \
+ include/GameObject.h include/Bullet.h include/Game.h include/State.h \
+ include/Sprite.h include/Music.h include/Game.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits include/InputManager.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
- include/Camera.h include/Vec2.h
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:
 
@@ -435,7 +436,7 @@ c:\mingw\include\time.h:
 
 include/SDL_include.h:
 
-C:\TDM-GCC-64/include/SDL2/SDL_image.h:
+include/Minion.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL.h:
 
@@ -607,21 +608,15 @@ C:\TDM-GCC-64/include/SDL2/SDL_locale.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL_misc.h:
 
-C:\TDM-GCC-64/include/SDL2/SDL_mixer.h:
-
-include/Game.h:
-
-include/SDL_include.h:
-
-include/State.h:
-
-include/Sprite.h:
-
-include/Component.h:
+C:\TDM-GCC-64/include/SDL2/SDL_image.h:
 
 C:\TDM-GCC-64/include/SDL2/SDL.h:
 
+C:\TDM-GCC-64/include/SDL2/SDL_mixer.h:
+
 C:\TDM-GCC-64/include/SDL2/SDL_ttf.h:
+
+include/Component.h:
 
 include/GameObject.h:
 
@@ -685,6 +680,34 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath:
 
 c:\mingw\include\math.h:
 
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\queue:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\deque.tcc:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_queue.h:
+
+include/Sprite.h:
+
+include/SDL_include.h:
+
+include/Component.h:
+
+include/GameObject.h:
+
+include/Bullet.h:
+
+include/Game.h:
+
+include/State.h:
+
+include/Sprite.h:
+
 include/Music.h:
 
 include/Game.h:
@@ -695,22 +718,6 @@ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h:
 
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h:
-
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h:
 
 c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits:
-
-include/InputManager.h:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h:
-
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h:
-
-include/Camera.h:
-
-include/Vec2.h:

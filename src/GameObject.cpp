@@ -11,7 +11,7 @@ using namespace std;
 #include <memory>
 #include<iterator>
 
-GameObject::GameObject() : box(Rect())  {
+GameObject::GameObject() : box(Rect()), started(false)  {
 
  isDead = false;
     
@@ -88,4 +88,17 @@ Component* GameObject::GetComponent(string type){
   }
   return nullptr;    
     
+}
+
+void GameObject::Start(){
+
+
+
+    for (auto &compon : components) {
+        compon->Start();
+    } 
+
+ started = true;
+
+
 }

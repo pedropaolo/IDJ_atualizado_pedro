@@ -212,7 +212,14 @@ dep/Game.d bin/Game.o: src/Game.cpp \
  include/Rect.h include/Vec2.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\math.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- include/Music.h include/Game.h include/State.h include/Resources.h \
+ include/Music.h include/Game.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits include/State.h \
+ include/Resources.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
@@ -682,6 +689,18 @@ c:\mingw\include\math.h:
 include/Music.h:
 
 include/Game.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h:
+
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits:
 
 include/State.h:
 
